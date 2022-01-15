@@ -19,8 +19,12 @@
 	echo "<br>";
     include 'variable.php';
 	echo "<br>";
-    echo "Now: ".date("d.m.Y i:s", mktime(0,14,10,7,10,2018));
-
+    $t = time();
+    echo date("d-m-Y",$t);
+    echo "<br>";
+    echo "Now: ".date("d.m.Y h:i:s", mktime(14,10,00,7,10,2018));
+    echo "<br>";
+    echo mt_rand(0,1000);
 
 ?>
 </body>
