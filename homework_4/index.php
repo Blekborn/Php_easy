@@ -1,26 +1,22 @@
 <?php
-ini_set('error_reporting', E_ALL);
-// Целые числа
-$numb0 = 1234; // десятичное число
-$numb1 = +143; // десятичное число
-$numb = -342; // отрицательное число
-$numb3 = 0123; // восьмеричное число
-$numb4 = 0x1A; // шестнадцатиричное число
-// Вещественные числа
-$var = 1.123;
-// Логический тип boolean
-// true
-// false
-// Строчный тип
-$str = "Hello, \n world - $numb0";
-$str1 = "Some  text - $numb0";
-$str2 = "Some text - \'34\'";
-echo $str2;
 
-// Неинициализированная переменная
-$some; // Notice
-// Специальный тип null
-$var2 = null;
-unset($str2, $str);
+$numb0 = 20;
+$numb1 = 2;
+$numb = -342.1;
+$numb3 = 23.43;
+$numb4 = 0.5;
+$numb5 = -23.5;
+$numb6 = 0.1;
+$numb7 = 42.43752;
+echo (floor($numb)."<br>");
+echo (ceil($numb3)."<br>");
+echo (floor($numb4)."<br>");
+echo (floor($numb5)."<br>");
+echo (ceil($numb6)."<br>");
+echo (ceil($numb7*100)/100)."<br>";
+
+
+$str = "\"Мне $numb0 лет и я уже $numb1 года учу программирование.\"";
+echo $str;
 
 ?>
